@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/My_Portfolio/static/css/main.5c776a02.css",
+    "main.js": "/My_Portfolio/static/js/main.d5e116ea.js",
+    "static/js/787.128fc6e9.chunk.js": "/My_Portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/portafolio.png": "/My_Portfolio/static/media/portafolio.119185e89e85222cc7b3.png",
+    "static/media/stats-card.jpg": "/My_Portfolio/static/media/stats-card.db02510005730ca4fc97.jpg",
+    "static/media/_DSC0022.JPG": "/My_Portfolio/static/media/_DSC0022.818ba1926787b3a8faa0.JPG",
+    "static/media/column-card.jpg": "/My_Portfolio/static/media/column-card.313964c46f6a29d87886.jpg",
+    "static/media/web-development-svgrepo-com.svg": "/My_Portfolio/static/media/web-development-svgrepo-com.2a47a0d6d5e15d1db9bf6bf82bfdf61e.svg",
+    "index.html": "/My_Portfolio/index.html",
+    "main.5c776a02.css.map": "/My_Portfolio/static/css/main.5c776a02.css.map",
+    "main.d5e116ea.js.map": "/My_Portfolio/static/js/main.d5e116ea.js.map",
+    "787.128fc6e9.chunk.js.map": "/My_Portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c776a02.css",
+    "static/js/main.d5e116ea.js"
+  ]
+}
