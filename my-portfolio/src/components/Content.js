@@ -4,6 +4,7 @@ import image1 from "./images/stats-card.jpg";
 import image2 from "./images/column-card.jpg";
 import foto from "./images/_DSC0022.JPG";
 import "./styles/Content.css";
+import portfolio from "./images/portafolio.png"
 import {
   FaReact,
   FaHtml5,
@@ -13,7 +14,9 @@ import {
   FaGitAlt,
   FaSass,
   FaBootstrap,
+  FaLinkedin
 } from "react-icons/fa";
+import {AiOutlineMail} from 'react-icons/ai'
 import { SiJavascript, SiMysql, SiNextdotjs } from "react-icons/si";
 function Content() {
   const [description, setDescription] = useState({
@@ -77,6 +80,14 @@ function Content() {
           },
         });
         break;
+      case "button7":
+        setDescription({
+          ...description,
+          buttons: {
+            button7: !description.buttons.button7,
+          },
+        });
+        break;
     }
   };
 
@@ -93,8 +104,8 @@ function Content() {
           <div className="container-description">
             <h3>Hey!</h3>
             <p>
-              I'M A FRONTEND DEVELOPMENT CURRENTLY I'M DOING MY LAST SEMESTER AT
-              UNIVERSITY
+              I'M A FRONTEND DEVELOPMENT, CURRENTLY I'M DOING MY LAST SEMESTER AT
+              UNIVERSITY, SERIOUS, RESPONSIBLE, ORGANIZED PERSON WITH A DESIRE TO WORK AND LEARN. WITH ADAPTABILITY AND TEAMWORK.
             </p>
           </div>
         </div>
@@ -107,137 +118,160 @@ function Content() {
         <div>
           <ul className="container-projects">
             <li className="card">
-              <h4>Frontend Challenge</h4>
+              <h4>Frontend Mentor Challenge</h4>
               <a
                 href="https://jmcc153.github.io/Stats-preview-card-component/"
                 target="_blank"
               >
                 <img className="image-card" src={image1}></img>
               </a>
-              <button id="button5" onClick={handleButton}>
+              <button className="btnReadMore" id="button5" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button5
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Improving the frontend skills, this is a frontend Challenge from Frontend Mentor
                 </p>
               </div>
             </li>
             <li className="card">
-              <h4>Frontend Challenge</h4>
-              <a href="https://codepen.io/jmcc153/pen/XWMxeRO" target="_blank">
+              <h4>Frontend Mentor Challenge</h4>
+              <a href="https://jmcc153.github.io/3-column-preview-card-component-FrontendChallenge/" target="_blank">
                 <img className="image-card" src={image2}></img>
               </a>
-              <button id="button6" onClick={handleButton}>
+              <button className="btnReadMore"  id="button6" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button6
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Improving the frontend skills, this is a frontend Challenge from Frontend Mentor
                 </p>
               </div>
             </li>
             <li className="card">
-              <h4>Frontend Challenge</h4>
-              <a href="https://codepen.io/jmcc153/pen/XWMxeRO" target="_blank">
-                <img
+              <h4>Frontend FreeCodeCamp</h4>
+              <a href="https://codepen.io/jmcc153/pen/poeZwYP" target="_blank">
+                <img 
                   className="image-card"
-                  src="https://shots.codepen.io/jmcc153/pen/poeZwYP-320.webp?version=1623191224"
+                  src="https://shots.codepen.io/jmcc153/pen/poeZwYP-512.webp?version=1623191224"
                 ></img>
               </a>
-              <button id="button1" onClick={handleButton}>
+              <button className="btnReadMore"  id="button1" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button1
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Project proposed in the course "Responsive Web Design Certification" by FreeCodeCamp to apply everything learned and achive the objectives of the project.
                 </p>
               </div>
             </li>
             <li className="card">
-              <h4>Frontend Challenge</h4>
-              <a href="https://codepen.io/jmcc153/pen/XWMxeRO" target="_blank">
+              <h4>Frontend FreeCodeCamp</h4>
+              <a href="https://codepen.io/jmcc153/pen/wvJEKxw" target="_blank">
                 <img
-                  className="image-card"
+                  className="image-card" 
                   src="https://shots.codepen.io/jmcc153/pen/wvJEKxw-320.webp?version=1623359476"
                 ></img>
               </a>
-              <button id="button2" onClick={handleButton}>
+              <button className="btnReadMore" id="button2" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button2
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Project proposed in the course "Responsive Web Design Certification" by FreeCodeCamp to apply everything learned and achive the objectives of the project.
                 </p>
               </div>
             </li>
             <li className="card">
-              <h4>Frontend Challenge</h4>
-              <a href="https://codepen.io/jmcc153/pen/XWMxeRO" target="_blank">
+              <h4>Frontend FreeCodeCamp</h4>
+              <a href="https://codepen.io/jmcc153/pen/YzZOgvv" target="_blank">
                 <img
                   className="image-card"
                   src="https://shots.codepen.io/jmcc153/pen/YzZOgvv-320.webp?version=1623370069"
                 ></img>
               </a>
-              <button id="button3" onClick={handleButton}>
+              <button className="btnReadMore" id="button3" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button3
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Project proposed in the course "Responsive Web Design Certification" by FreeCodeCamp to apply everything learned and achive the objectives of the project.
                 </p>
               </div>
             </li>
             <li className="card">
-              <h4>Frontend Challenge</h4>
+              <h4>Frontend FreeCodeCamp</h4>
               <a href="https://codepen.io/jmcc153/pen/XWMxeRO" target="_blank">
                 <img
                   className="image-card"
                   src="https://shots.codepen.io/jmcc153/pen/XWMxeRO-512.webp?version=1623705502"
                 ></img>
               </a>
-              <button id="button4" onClick={handleButton}>
+              <button className="btnReadMore" id="button4" onClick={handleButton}>
                 Read More
               </button>
               <div>
                 <p
                   className={
                     description.buttons.button4
-                      ? ""
+                      ? "info-projects"
                       : "description-project-hide"
                   }
                 >
-                  AJSFKAFJSKASFJKASFJKASFJKASKFKSF
+                  Project proposed in the course "Responsive Web Design Certification" by FreeCodeCamp to apply everything learned and achive the objectives of the project.
+                </p>
+              </div>
+            </li>
+            <li className="card card-7">
+              <h4>Frontend FreeCodeCamp</h4>
+              <a href="https://jmcc153.github.io/My_Portfolio/" target="_blank">
+                <img
+                  className="image-card"
+                  src={portfolio}
+                ></img>
+              </a>
+              <button className="btnReadMore" id="button7" onClick={handleButton}>
+                Read More
+              </button>
+              <div>
+                <p
+                  className={
+                    description.buttons.button7
+                      ? "info-projects"
+                      : "description-project-hide"
+                  }
+                >
+                  My PortFolio also is a project proposed by FreeCodeCamp, ¿great right?
                 </p>
               </div>
             </li>
@@ -382,6 +416,13 @@ function Content() {
         <h1 id="contact" className="title-projects">
           CONTACT ME
         </h1>
+        <div className="info-contact">
+          <h3><AiOutlineMail style={{position:'relative', top:'2px', right:'10px'}}/>Email: jmcastillo153@hotmail.com</h3>
+        <div className="networks-contact">
+          <a className="icon-contact" href="https://github.com/jmcc153" target="_blank"><FaGithub /></a>
+          <a className="icon-contact" href="https://www.linkedin.com/in/jorge-castillo-46a2731b9/" target="_blank"><FaLinkedin/></a>
+        </div>
+        </div>
       </div>
     </div>
   );

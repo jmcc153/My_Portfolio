@@ -8,7 +8,7 @@
   align-items: center;
 }
 .body-projects {
-  background: linear-gradient(35deg, #279a9e, #6e6f6a);
+  background: linear-gradient(160deg, #279a9e, #6e6f6a);
   background-attachment: fixed;
   position: relative;
   z-index: 2;
@@ -82,7 +82,7 @@
   height: 100%;
   border-radius: 5px;
   border: 2px solid #279a9e;
-  animation: border-move 5s infinite;
+  animation: border-move 5s infinite linear;
   box-shadow: 5px 10px #279a9e;
   padding: 1%;
   background-color: white;
@@ -93,27 +93,28 @@
 }
 @keyframes border-move {
   25% {
-    border: 2px solid red;
-    box-shadow: 5px 10px red;
+    border: 2px solid #185759;
+    box-shadow: 5px 10px #185759;
   }
   50% {
-    border: 2px solid yellow;
-    box-shadow: 5px 10px yellow;
+    border: 2px solid #48b4b8;
+    box-shadow: 5px 10px #48b4b8;
   }
   75% {
-    border: 2px solid green;
-    box-shadow: 5px 10px green;
+    border: 2px solid #0e8c91;
+    box-shadow: 5px 10px #0e8c91;
   }
   100% {
-    border: 2px solid blue;
-    box-shadow: 5px 10px blue;
+    border: 2px solid #0f3c3d;
+    box-shadow: 5px 10px #0f3c3d;
   }
 }
 
 .container-projects {
   display: grid;
   grid-template-columns: repeat(3, 20%);
-  gap: 2rem;
+  justify-items: center;
+  gap: 2rem 0px;
 }
 
 .card {
@@ -122,22 +123,35 @@
   align-items: center;
   width: 100%;
   height: 60vh;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-radius: 3px;
   position: relative;
-  background-color: white;
-  color: #279a9e;
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
+  /*background-color: rgba(255, 255, 255, 0.164);*/
+  color: white;
+  box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card a {
     padding-bottom: 2vh ;
 }
+.btnReadMore{
+  border: 0px;
+  background-color: transparent;
+  color: white;
+  border-radius: 0 10px 0 10px;
+  box-shadow: 2px 3px #073031;
+  transition: .3s ease;
+}
+.btnReadMore:hover{
+  background-color: #073031;
+  box-shadow: 10px 10px 0px #073031;
+  opacity: 0.8;
+}
 
 
 .image-card {
-  padding: 0 12px;
-  width: 90%;
+/*   padding: 0 12px;
+ */  width: 90%;
   max-height: 25vh;
   border-radius: 5px;
   box-shadow: 5px 10px rgba(110, 111, 106, 0.3);
@@ -146,12 +160,26 @@
 .description-project-hide {
   display: none;
 }
+.info-projects{
+  padding: 0 1vw;
+  opacity: 0;
+  animation: vanish 2s;
+  animation-fill-mode: forwards;
+}
 
 .react-icon{
   margin-top: 2vh;
   animation: spin 7s infinite linear;
   color: #279a9e;
   font-size: 5vw;
+}
+
+@keyframes vanish {
+  
+  100%{
+    opacity: 1;
+  }
+  
 }
 
 @keyframes spin {
@@ -178,6 +206,30 @@
   border-radius: 5px;
   width: 12vw;
   box-shadow: 5px 10px rgba(110, 111, 106, 0.4);
+}
+.body-contact{
+  background: linear-gradient(35deg, #279a9e, #6e6f6a);
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.info-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.networks-contact{
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+}
+.icon-contact{
+  font-size: 5vw;
+}
+
+.card-7{
+  grid-area: 3/2;
 }
 
 @keyframes slider {
