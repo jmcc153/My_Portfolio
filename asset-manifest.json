@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.06e74dd6.css",
-    "main.js": "/My_Portfolio/static/js/main.37868b01.js",
+    "main.css": "/My_Portfolio/static/css/main.991c4b6e.css",
+    "main.js": "/My_Portfolio/static/js/main.b6382cee.js",
     "static/js/787.128fc6e9.chunk.js": "/My_Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/portafolio.png": "/My_Portfolio/static/media/portafolio.119185e89e85222cc7b3.png",
     "static/media/desktop-design.jpg": "/My_Portfolio/static/media/desktop-design.bd372577d35c4ff20a55.jpg",
@@ -10,12 +10,12 @@
     "static/media/column-card.jpg": "/My_Portfolio/static/media/column-card.313964c46f6a29d87886.jpg",
     "static/media/web-development-svgrepo-com.svg": "/My_Portfolio/static/media/web-development-svgrepo-com.2a47a0d6d5e15d1db9bf6bf82bfdf61e.svg",
     "index.html": "/My_Portfolio/index.html",
-    "main.06e74dd6.css.map": "/My_Portfolio/static/css/main.06e74dd6.css.map",
-    "main.37868b01.js.map": "/My_Portfolio/static/js/main.37868b01.js.map",
+    "main.991c4b6e.css.map": "/My_Portfolio/static/css/main.991c4b6e.css.map",
+    "main.b6382cee.js.map": "/My_Portfolio/static/js/main.b6382cee.js.map",
     "787.128fc6e9.chunk.js.map": "/My_Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06e74dd6.css",
-    "static/js/main.37868b01.js"
+    "static/css/main.991c4b6e.css",
+    "static/js/main.b6382cee.js"
   ]
 }
