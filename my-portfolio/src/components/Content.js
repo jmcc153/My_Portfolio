@@ -51,7 +51,7 @@ function Content() {
       name: "Frontend FreeCodeCamp",
       image: portfolio,
       description: "This is a challenge from FreeCodeCamp. It is a portfolio page. I used React and CSS3 to build it.",
-      url: "https://jmcc153.github.io/Portfolio/",
+      url: "https://jmcc153.github.io/My_Portfolio/",
       button: "button4"
     },
     {
