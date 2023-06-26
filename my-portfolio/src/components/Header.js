@@ -1,36 +1,41 @@
 import React from "react";
-import "./styles/Header.css";
-function Header() {
+import  "./styles/Header.css";
+
+
+function Header({scrollPosition}) {
+
   return (
     <div>
       
       <header>
-        <div className="items">
+        <div id="home" className="items">
           <h1 className="title-name">Jorge Castillo</h1>
-          <h1>WEB DEVELOPMENT</h1>
         </div>
-        <ul>
+        <ul className={scrollPosition <= 250 ? 'nav-bar-top' : 'nav-bar'}>
+        {scrollPosition <= 250 ? '' : <li className="home-li">
+            <a className="anchor" href="#home">JC</a>
+          </li>}       
           <li>
-            <a href="#about_me">ABOUT ME</a>
+            <a className="anchor" href="#about_me">ABOUT ME</a>
           </li>
           <li>
-            <a href="#projects">PROJECTS</a>
+            <a className="anchor" href="#projects">PROJECTS</a>
           </li>
           <li>
-            <a href="#skills">SKILLS</a>
+            <a className="anchor" href="#skills">SKILLS</a>
           </li>
           <li>
-            <a href="#contact">CONTACT ME</a>
+            <a className="anchor" href="#contact">CONTACT ME</a>
           </li>
         </ul>
       
         <svg
-          class="waves"
+          className="waves"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 24 150 28"
           preserveAspectRatio="none"
-          shape-rendering="auto"
+          shapeRendering="auto"
         >
           <defs>
             <path
@@ -38,7 +43,7 @@ function Header() {
               d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
             />
           </defs>
-          <g class="parallax">
+          <g className="parallax">
             <use
               xlinkHref="#gentle-wave"
               x="48"

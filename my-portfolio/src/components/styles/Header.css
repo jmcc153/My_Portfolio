@@ -1,3 +1,6 @@
+
+html{scroll-behavior:smooth}
+
 header {
     display: flex;
     position: relative;
@@ -5,10 +8,16 @@ header {
     align-items: center;
     /*height: 30vw;*/
     justify-content: space-around;
-    background: linear-gradient(35deg, #279A9E,#6E6F6A);
+    background: linear-gradient(35deg, #4f1de2,#ca6226);
     background-attachment: fixed;
     color:white;
     z-index: 2;
+}
+.title-job{
+  color: #fff;
+  text-shadow:
+    0 0 100px #4f1de2,
+    0 0 150px #ca6226;
 }
 .waves {
     position:relative;
@@ -61,12 +70,72 @@ header {
 .title-name{
     font-size: 4vw;
     width: auto;
+    color: #fff;
+  text-shadow:
+    0 0 100px #4f1de2,
+    0 0 150px #ca6226;
 } 
 
-a {
+.anchor {
     text-decoration: none;
-    color: white;
+    color: white;    
+    padding: 5px; 
+    transition: all ease 0.8s;
 }
+.anchor:hover{
+  position: relative;
+  box-shadow: 10px 10px 0px #4e1de2be, 10px 10px 5px 5px #ca6226a9;
+  border: black;
+  top: -5px;
+  left: -5px;
+  
+  border-radius: 5px;
+}
+.nav-bar{
+  position: fixed;
+  /*background: linear-gradient(35deg, #4e1de27c,#ca622680);*/
+  background-color: rgba(255, 255, 255, 0.795);
+  /*backdrop-filter: blur(5px);*/
+  border: #4f1de2 solid 0.1px;
+  padding: 2vh 0;
+  top: 0;
+  z-index: 3;
+  transition: all linear 1s, background-color .3s ease .3s, padding .2s linear .2s;
+  border-radius: 50px;
+}
+.nav-bar li a:hover {
+  border-radius: 50px ;
+}
+.nav-bar-top{
+  display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 3vh 0;
+    text-align: center;
+    list-style: none;
+    transition: all linear 1s,  background-color .3s ease .3s, padding .2s linear .2s;
+}
+.nav-bar li a {
+  color: #4f1de2;
+}
+.home-li-top{
+  visibility: hidden;
+  transform: translateX(-100px);
+}
+@media screen and (max-width: 450px) {
+  .nav-bar li a{
+    font-size: 11px;
+  }
+  .nav-bar{
+    visibility: hidden;
+    transition: none;
+  }
+  .nav-bar-top li a{
+    font-size: 11px;
+  }
+}
+
 p{
     margin-bottom: 6vh;
 }
@@ -84,7 +153,7 @@ ul{
     justify-content: space-around;
     width: 100%;
     margin: 0;
-    padding: 3vw 0;
+    padding: 12px 0;
     text-align: center;
     list-style: none;
 }

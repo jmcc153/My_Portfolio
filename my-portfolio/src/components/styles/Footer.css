@@ -1,7 +1,7 @@
 .body-footer{
     position: relative;
-    font-size: 24px;
-    color: #279a9e;
+    font-size: 18px;
+    color: #4f1de2;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -14,4 +14,5 @@
 .copyright p{
     margin: 0;
     text-align: center;
+    padding: 20px;
 }

@@ -8,10 +8,10 @@
   align-items: center;
 }
 .body-projects {
-  background: linear-gradient(160deg, #279a9e, #6e6f6a);
+  background: linear-gradient(160deg, #4f1de2,#ca6226);
   background-attachment: fixed;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: white;
 }
 .container-photo{
@@ -19,7 +19,7 @@
   height: fit-content;
 }
 .container-photo img{
-  border: 3px solid #279a9e;
+  box-shadow: 0px 2px 5px 5px #4f1de2;
   border-radius: 5px;
   width: 100%;
   
@@ -47,6 +47,7 @@
 }
 .container-skills{
   position: relative;
+  padding-bottom: 3vh;
 }
 .container-skills::before{
   content: "";
@@ -56,7 +57,7 @@
   top:0;
   left: 0;
   height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgb(213, 198, 198) 0%, rgba(255,255,255,0) 100%);
 	}
 .container-skills::after{
   content: "";
@@ -66,55 +67,81 @@
   top:0;
   right: 0;
   height: 100%;
-  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to left, rgb(213, 198, 198) 0%, rgba(255,255,255,0) 100%);
   }
 .title-about-me {
   text-align: center;
-  color: #279a9e;
+  color: #4f1de2;
 }
 .title-projects {
   text-align: center;
 }
 .container-description {
   display: flex;
+  color:rgb(255, 255, 255);
   flex-direction: column;
   width: 100% ;
   height: 100%;
   border-radius: 5px;
-  border: 2px solid #279a9e;
-  animation: border-move 5s infinite linear;
-  box-shadow: 5px 10px #279a9e;
-  padding: 1%;
+  /*border: 2px solid #D42F24;*/
+  /*animation: border-move 5s infinite linear;*/
+  box-shadow: 1px -1px 2px 5px #ca62268e, 1px 1px 12px 6px #4e1de27a;
+  background: linear-gradient(35deg, #4e1de2c5,#ca6226be);
+  padding: 13px;
   background-color: white;
 }
 .box-description{
   width: 35vw;
   height: fit-content;
 }
-@keyframes border-move {
+ /* @keyframes border-move {
   25% {
-    border: 2px solid #185759;
-    box-shadow: 5px 10px #185759;
+    
+    box-shadow: 5px 5px 20px 10px #4f1de2;
   }
   50% {
-    border: 2px solid #48b4b8;
-    box-shadow: 5px 10px #48b4b8;
+    
+    box-shadow: 5px 5px 20px 8px #4f1de2;
   }
   75% {
-    border: 2px solid #0e8c91;
-    box-shadow: 5px 10px #0e8c91;
+    
+    box-shadow: 5px 5px 20px 5px #4f1de2;
   }
   100% {
-    border: 2px solid #0f3c3d;
-    box-shadow: 5px 10px #0f3c3d;
+    
+    box-shadow: 5px 5px 20px 3px #4f1de2;
   }
-}
+}  */
 
 .container-projects {
   display: grid;
   grid-template-columns: repeat(3, 20%);
   justify-items: center;
   gap: 2rem 0px;
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .container-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-items: center;
+    gap: 2rem 0px;
+  }
+}
+@media screen and (max-width: 499px){
+
+  .container-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .container-photo{
+    width: 35vw;
+  }
+  .box-description{
+    width: 50vw;
+  }
 }
 
 .card {
@@ -124,11 +151,11 @@
   width: 100%;
   height: 60vh;
   /*border: 1px solid black;*/
-  border-radius: 3px;
+  border-radius: 20px;
   position: relative;
   /*background-color: rgba(255, 255, 255, 0.164);*/
   color: white;
-  box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 8px 8px 8px rgb(8 63 151 / 45%);
 }
 
 .card a {
@@ -136,6 +163,7 @@
 }
 .btnReadMore{
   border: 0px;
+  padding: 7px;
   background-color: transparent;
   color: white;
   border-radius: 0 10px 0 10px;
@@ -162,6 +190,8 @@
 }
 .info-projects{
   padding: 0 1vw;
+  text-align: left;
+  line-height: 1.5;
   opacity: 0;
   animation: vanish 2s;
   animation-fill-mode: forwards;
@@ -170,7 +200,7 @@
 .react-icon{
   margin-top: 2vh;
   animation: spin 7s infinite linear;
-  color: #279a9e;
+  color: #4f1de2;
   font-size: 5vw;
 }
 
@@ -193,10 +223,13 @@
 .icon {
   margin-top: 2vh;
   font-size: 5vw;
-  color: #279a9e ;
+  color: #4f1de2 ;
 }
 .description-skills{
   text-align: center;
+}
+#skills{
+  padding-bottom: 3vh;
 }
 .box-icon{
   display: flex;
@@ -205,14 +238,18 @@
   background-color: white;
   border-radius: 5px;
   width: 12vw;
+  min-width: 100px;
   box-shadow: 5px 10px rgba(110, 111, 106, 0.4);
 }
 .body-contact{
-  background: linear-gradient(35deg, #279a9e, #6e6f6a);
+  background: linear-gradient(35deg, #4f1de2,#ca6226);
   background-attachment: fixed;
   position: relative;
   z-index: 2;
   color: white;
+}
+#contact{
+  padding-top: 3vh;
 }
 .info-contact{
   display: flex;
@@ -225,7 +262,8 @@
   justify-content: space-evenly;
 }
 .icon-contact{
-  font-size: 5vw;
+  font-size: 50px;
+  color: white;
 }
 
 .card-7{
