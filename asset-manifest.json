@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.0e63c7c5.css",
-    "main.js": "/My_Portfolio/static/js/main.46c53326.js",
+    "main.css": "/My_Portfolio/static/css/main.0a903ca4.css",
+    "main.js": "/My_Portfolio/static/js/main.c36b412d.js",
     "static/js/787.128fc6e9.chunk.js": "/My_Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/FotoCV.jpg": "/My_Portfolio/static/media/FotoCV.36b41ac98d2d526cd721.jpg",
     "static/media/Pokedex.png": "/My_Portfolio/static/media/Pokedex.071d42778394116e74e3.png",
@@ -11,12 +11,12 @@
     "static/media/column-card.jpg": "/My_Portfolio/static/media/column-card.313964c46f6a29d87886.jpg",
     "static/media/portafolio.JPG": "/My_Portfolio/static/media/portafolio.18ed0642fe5b70a68b54.JPG",
     "index.html": "/My_Portfolio/index.html",
-    "main.0e63c7c5.css.map": "/My_Portfolio/static/css/main.0e63c7c5.css.map",
-    "main.46c53326.js.map": "/My_Portfolio/static/js/main.46c53326.js.map",
+    "main.0a903ca4.css.map": "/My_Portfolio/static/css/main.0a903ca4.css.map",
+    "main.c36b412d.js.map": "/My_Portfolio/static/js/main.c36b412d.js.map",
     "787.128fc6e9.chunk.js.map": "/My_Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e63c7c5.css",
-    "static/js/main.46c53326.js"
+    "static/css/main.0a903ca4.css",
+    "static/js/main.c36b412d.js"
   ]
 }
