@@ -3,6 +3,7 @@ import image1 from "./images/stats-card.jpg";
 import image2 from "./images/column-card.jpg";
 import image3 from "./images/desktop-design.jpg"
 import image4 from "./images/weatherReport.png"
+import image5 from "./images/Pokedex.png"
 import foto from "./images/FotoCV.jpg";
 import "./styles/Content.css";
 import portfolio from "./images/portafolio.JPG"
@@ -17,6 +18,7 @@ import {
   FaBootstrap,
   FaLinkedin
 } from "react-icons/fa";
+import {BsArrowUpRightCircle} from 'react-icons/bs'
 import {AiOutlineMail} from 'react-icons/ai'
 import { SiJavascript, SiMysql, SiNextdotjs } from "react-icons/si";
 function Content() {
@@ -62,14 +64,14 @@ function Content() {
       url: "https://jmcc153.github.io/Weather-report/",
       button: "button5"
     },
-    /* {
+    {
       id: 6,
       name: "Pokedex React Native",
-      image: image4,
+      image: image5,
       description: "This is a Pokedex app, I used React Native, Expo, and PokeApi to build it.",
       url: "https://github.com/jmcc153/React-Native-Pokedex",
       button: "button6"
-    } */
+    }
   ];
   const skills = [
     {
@@ -211,6 +213,10 @@ function Content() {
                   href={project.url}
                   target="_blank" rel="noreferrer"
                 >
+                  <div className='containerIcon'>
+                    <BsArrowUpRightCircle/>
+                    <h3>See project</h3>
+                  </div>
                   <img className="image-card" src={project.image} alt="imagenCards"></img>
                 </a>
                 <button className="btnReadMore" id={project.id} onClick={handleButton}>
@@ -294,7 +300,7 @@ function Content() {
           CONTACT ME
         </h1>
         <div className="info-contact">
-          <h3><AiOutlineMail style={{position:'relative', top:'2px', right:'10px'}}/>Email: jmcastillo153@hotmail.com</h3>
+          <h3><AiOutlineMail style={{position:'relative', top:'2px', right:'10px'}}/>Email: jmcastillo9915@gmail.com</h3>
         <div className="networks-contact">
           <a className="icon-contact" href="https://github.com/jmcc153" target="_blank" rel="noreferrer"><FaGithub /></a>
           <a className="icon-contact" href="https://www.linkedin.com/in/jorge-castillo-46a2731b9/" target="_blank" rel="noreferrer"><FaLinkedin/></a>

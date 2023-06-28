@@ -1,7 +1,12 @@
+:root{
+    --main-color: #3F7E65;
+    --second-color: #7E3F59;
+  }
+
 .body-footer{
     position: relative;
     font-size: 18px;
-    color: #4f1de2;
+    color: var(--main-color);
     height: 10vh;
     display: flex;
     justify-content: center;

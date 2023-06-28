@@ -1,6 +1,11 @@
 
 html{scroll-behavior:smooth}
 
+:root{
+  --main-color: #3F7E65;
+  --second-color: #7E3F59;
+}
+
 header {
     display: flex;
     position: relative;
@@ -8,7 +13,7 @@ header {
     align-items: center;
     /*height: 30vw;*/
     justify-content: space-around;
-    background: linear-gradient(35deg, #4f1de2,#ca6226);
+    background: linear-gradient(35deg, var(--main-color),var(--second-color));
     background-attachment: fixed;
     color:white;
     z-index: 2;
@@ -16,8 +21,8 @@ header {
 .title-job{
   color: #fff;
   text-shadow:
-    0 0 100px #4f1de2,
-    0 0 150px #ca6226;
+    0 0 100px var(--main-color),
+    0 0 150px var(--second-color);
 }
 .waves {
     position:relative;
@@ -72,8 +77,8 @@ header {
     width: auto;
     color: #fff;
   text-shadow:
-    0 0 100px #4f1de2,
-    0 0 150px #ca6226;
+    0 0 100px var(--main-color),
+    0 0 150px var(--second-color);
 } 
 
 .anchor {
@@ -84,24 +89,20 @@ header {
 }
 .anchor:hover{
   position: relative;
-  box-shadow: 10px 10px 0px #4e1de2be, 10px 10px 5px 5px #ca6226a9;
+  box-shadow: 10px 10px 0px var(--main-color), 10px 10px 2px 2px var(--second-color);
   border: black;
   top: -5px;
   left: -5px;
-  
   border-radius: 5px;
 }
 .nav-bar{
   position: fixed;
-  /*background: linear-gradient(35deg, #4e1de27c,#ca622680);*/
-  background-color: rgba(255, 255, 255, 0.795);
+  background: linear-gradient(35deg, var(--main-color),var(--second-color));
   /*backdrop-filter: blur(5px);*/
-  border: #4f1de2 solid 0.1px;
   padding: 2vh 0;
   top: 0;
   z-index: 3;
   transition: all linear 1s, background-color .3s ease .3s, padding .2s linear .2s;
-  border-radius: 50px;
 }
 .nav-bar li a:hover {
   border-radius: 50px ;
@@ -117,7 +118,7 @@ header {
     transition: all linear 1s,  background-color .3s ease .3s, padding .2s linear .2s;
 }
 .nav-bar li a {
-  color: #4f1de2;
+  color: white;
 }
 .home-li-top{
   visibility: hidden;

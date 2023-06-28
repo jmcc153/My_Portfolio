@@ -6,7 +6,6 @@ function Header({scrollPosition}) {
 
   return (
     <div>
-      
       <header>
         <div id="home" className="items">
           <h1 className="title-name">Jorge Castillo</h1>
@@ -14,7 +13,7 @@ function Header({scrollPosition}) {
         <ul className={scrollPosition <= 250 ? 'nav-bar-top' : 'nav-bar'}>
         {scrollPosition <= 250 ? '' : <li className="home-li">
             <a className="anchor" href="#home">JC</a>
-          </li>}       
+          </li>}
           <li>
             <a className="anchor" href="#about_me">ABOUT ME</a>
           </li>
@@ -28,7 +27,6 @@ function Header({scrollPosition}) {
             <a className="anchor" href="#contact">CONTACT ME</a>
           </li>
         </ul>
-      
         <svg
           className="waves"
           xmlns="http://www.w3.org/2000/svg"
